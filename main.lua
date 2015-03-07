@@ -22,18 +22,14 @@ function love.draw()
 	love.graphics.print(vespa.x, 20, 20)
 	love.graphics.print(vespa.y, 20, 50)
 
-	--local x, y = love.mouse.getPosition()
-	--vespa.x = x
-	--vespa.y = y
+	local x, y = love.mouse.getPosition()
+	vespa.x = x
+	vespa.y = y
 
 end
 
 -- Update logika game
 function love.update(dt)
 
-	-- Jalan ke kanan
-	if vespa.x <= 750 then
-		vesp.x = vespa.x + (300 * dt)
-	end
 
 end
